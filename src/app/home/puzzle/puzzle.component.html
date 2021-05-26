@@ -1,0 +1,32 @@
+<div class="container">
+    <div id="puzzle"(dragover)="dragOver($event)" (dragleave)="dragLeave($event)" (drop)="drop($event)">
+        <div class="placeholder" id="1" data-id="0"></div>
+        <div class="placeholder" id="2" data-id="1"></div>
+        <div class="placeholder" id="3" data-id="2"></div>
+        <div class="placeholder" id="4" data-id="3"></div>
+        <div class="placeholder" id="5" data-id="4"></div>
+        <div class="placeholder" id="6" data-id="5"></div>
+        <div class="placeholder" id="7" data-id="6"></div>
+        <div class="placeholder" id="8" data-id="7"></div>
+        <div class="placeholder" id="9" data-id="8"></div>
+    </div>
+    <div id="piezas">
+        <div (dragstart)="dragStart($event,0)"><img class="pieza" alt="" id="pieza-0"></div>
+        <div (dragstart)="dragStart($event,1)"><img class="pieza" alt="" id="pieza-1"></div>
+        <div (dragstart)="dragStart($event,2)"><img class="pieza" alt="" id="pieza-2"></div>
+        <div (dragstart)="dragStart($event,3)"><img class="pieza" alt="" id="pieza-3"></div>
+        <div (dragstart)="dragStart($event,4)"><img class="pieza" alt="" id="pieza-4"></div>
+        <div (dragstart)="dragStart($event,5)"><img class="pieza" alt="" id="pieza-5"></div>
+        <div (dragstart)="dragStart($event,6)"><img class="pieza" alt="" id="pieza-6"></div>
+        <div (dragstart)="dragStart($event,7)"><img class="pieza" alt="" id="pieza-7"></div>
+        <div (dragstart)="dragStart($event,8)"><img class="pieza" alt="" id="pieza-8"></div>
+    </div>
+
+    <div class="intentos">
+        <h2>No. Intentos: {{intentos}}</h2>
+
+    </div>
+    
+       
+</div>
+<h1 id="mensaje">¡Ganaste!</h1>

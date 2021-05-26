@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url("./assets/images/wood-background.jpg");
+}
+
+#piezas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: auto;
+    justify-content: center;
+}
+
+#puzzle {
+    border: 1px solid black;
+    width: 318px;
+    height: 495px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.pieza {
+    width: 106px;
+    height: 165px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.placeholder {
+    background-color: #F2F2F2;
+    outline: 1px solid #333;
+    width: 106px;
+    height: 165px;
+    transition: 1s;
+}
+
+.placeholder.hover {
+    background-color: rgb(202, 147, 44);
+}
+
+.placeholder .pieza {
+    margin: 0;
+}
+
+#mensaje {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: none;
+}
+
+.ganaste {
+    background-color: #000000;
+}
+
+.ganaste #mensaje {
+    display: block;
+}
+
+.ganaste .placeholder {
+    outline: none;
+}
+
+.ganaste #piezas {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intentos{
+
+    position: absolute;
+    bottom: 0;
+
+
+    color: white;
+    
+}
